@@ -87,7 +87,7 @@ router.get('/post/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-});
+}); 
 
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
